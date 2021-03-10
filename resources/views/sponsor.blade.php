@@ -9,8 +9,8 @@
 <body>
   <h1>I nostri Sponsor</h1>
   <h2>
-    @foreach($data as $partner)
-      {{ $partner }}
+    @foreach($cibo as $partner)
+      {{ $partner}}@if (!$loop->last),@endif
     @endforeach
   </h2>
 </body>

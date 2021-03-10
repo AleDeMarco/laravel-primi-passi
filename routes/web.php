@@ -18,11 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/sponsor', function () {
-    $data= [
+    $food= [
         'McDonald\'s',
         'Burger King',
         'Pepsi',
         'Ferrero'
     ];
+    $data = ['cibo' => $food];
     return view('sponsor', $data);
 });
